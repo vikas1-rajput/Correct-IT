@@ -1,0 +1,5 @@
+{
+  "name": "Smart Scribe AI",
+  "description": "An intelligent keyboard agent that corrects grammar and adjusts tone in English and Hinglish, preserving context and language style.",
+  "requestFramePermissions": []
+}
