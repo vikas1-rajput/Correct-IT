@@ -47,7 +47,7 @@ export const generateRewrite = async (
   // Specific prompts tailored for Hinglish context retention
   switch (tone) {
     case ToneType.GRAMMAR:
-      prompt = `Correct the grammar and spelling. If the text is Hinglish, KEEP IT HINGLISH. Fix only mistakes. Preserve the original context. If unclear/unsafe, return error code: "${text}"`;
+      prompt = `Correct the grammar and spelling. If the text is Hinglish, KEEP IT HINGLISH. Fix only mistakes.If its in english only correct its grammar english if its in hindi only correct its grammar hindi. Preserve the original context. If unclear/unsafe, return error code: "${text}"`;
       break;
     case ToneType.PROFESSIONAL:
       prompt = `Make this text sound professional and formal. If it is Hinglish, use respectful words (like 'Kripya', 'Ji', 'Aap'). Do not translate to English unless the original was English: "${text}"`;
